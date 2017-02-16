@@ -1,0 +1,19 @@
+#loginBox {
+  margin-top: 10%;
+  max-width:  90%;
+  width: 500px
+}
+
+#searchBox {
+  border-width: 3px;
+  border-style: solid;
+  margin-top: 20px;
+  font-size: 15px;
+  padding: 25px;
+  border-radius: 25px;
+  border-color: #4CAF50 !important;
+}
+
+#overviewBox {
+  padding: 20px;
+}

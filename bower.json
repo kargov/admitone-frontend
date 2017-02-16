@@ -1,0 +1,17 @@
+{
+  "name": "admitone-frontend",
+  "description": "AdmitOne application based on starter project for AngularJS",
+  "version": "0.0.0",
+  "homepage": "https://github.com/angular/angular-seed",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "angular": "~1.6.1",
+    "angular-route": "~1.6.1",
+    "angular-loader": "~1.6.1",
+    "angular-mocks": "~1.6.1",
+    "angular-material": "~1.1.1",
+    "angular-local-storage": "~0.5.2",
+    "ng-table":"~1.0.0"
+  }
+}

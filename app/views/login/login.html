@@ -1,0 +1,28 @@
+<div ng-controller="LoginCtrl" layout="column" layout-align="center center" layout-fill="layout-fill">
+    <div layout="column" id="loginBox" class="md-whiteframe-z1">
+        <md-toolbar>
+            <h2 class="md-toolbar-tools"><span>Login</span></h2>
+        </md-toolbar>
+        <md-content layout="column" class="md-padding">
+            <form name="loginForm" ng-submit="login();">
+                <md-input-container class="md-block">
+                    <label>Username</label>
+                    <input type="text" ng-model="username" id="username" required/>
+                </md-input-container>
+                <md-input-container class="md-block">
+                    <label>Password</label>
+                    <input type="password" ng-model="password" id="password" required/>
+                </md-input-container>
+                <div ng-show="showError" class="error">
+                    <p md-colors="{color:'red'}">{{error}}</p>
+                </div>
+                <div ng-show="loginForm.$submitted" ng-hide="!loginForm.$submitted || error">
+                    <md-progress-linear md-mode="indeterminate"></md-progress-linear>
+                </div>
+                <div layout="row" layout-align="center center" style="padding-top:20px;">
+                    <md-button type="submit" class="md-raised md-primary" id="login">Login</md-button>
+                </div>
+            </form>
+        </md-content>
+    </div>
+</div>

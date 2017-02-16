@@ -1,0 +1,15 @@
+<div ng-controller="OverviewCtrl" id="overviewBox" layout="column" layout-align="center center" layout-fill="layout-fill">
+    <table ng-table="tableParams" class="table table-striped table-hover" show-filter="true">
+        <tr ng-repeat="item in $data">
+            <td title="'Event ID'" filter="{eventId: 'number'}" sortable="'eventId'" class="text-center" header-class="'text-center'">
+                {{item.eventId}}
+            </td>
+            <td title="'Customer'" filter="{username: 'text'}" sortable="'username'" class="text-center" header-class="'text-center'">
+                {{item.username}}
+            </td>
+            <td title="'Tickets'" filter="{totalNumberOfTickets: 'number'}" sortable="'totalNumberOfTickets'" class="text-center" header-class="'text-center'">
+                {{item.totalNumberOfTickets}}
+            </td>
+        </tr>
+    </table>
+</div>
